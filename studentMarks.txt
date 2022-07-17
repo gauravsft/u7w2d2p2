@@ -40,7 +40,23 @@ ans:- db.students_marks.find().sort({science:-1}).skip(80).limit(20)
 ans:- db.students_marks.find({gender:"Female"}).sort({science:1, maths:1}).skip(15).limit(5)
 
 13. Male Students who will fall in page 3 if ordered by decreasing order of science, maths and english scores (Assume 15 results per page)
-ans:- db.students_marks.find({gender:"Male"}).sort( {science:-1, maths:-1, english:-1}).skip(30).limit(15)
+ans:- db.students_marks.find({gender:"Male"}).sort({science:-1, maths:-1, english:-1}).skip(30).limit(15)
+
+
+Note:-
+-->some issue some time in Question 13
+
+
+
+
+
+
+Made By :- Er. Gaurav Kumar
+
+
+
+
+
 
 
 
